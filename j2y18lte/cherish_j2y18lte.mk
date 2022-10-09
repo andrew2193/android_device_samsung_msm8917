@@ -22,9 +22,6 @@ $(call inherit-product, vendor/cherish/config/common_full_phone.mk)
 # Inherit MIUI Camera
 $(call inherit-product, vendor/MiuiCamera/config.mk)
 
-# Official
-CHERISH_BUILD_TYPE := OFFICIAL
-
 # Maintainer
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.cherish.maintainer=andrew2193(Ryzen 3900x)

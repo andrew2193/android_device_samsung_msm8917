@@ -69,5 +69,9 @@ PRODUCT_COPY_FILES += \
 PRODUCT_SOONG_NAMESPACES += \
     device/samsung/j2y18lte
 
+# overlay
+DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay
+OVERLAY_DEVICE := j2y18lte
+
 # Inherit vendor
 $(call inherit-product, vendor/samsung/j2y18lte/j2y18lte-vendor.mk)

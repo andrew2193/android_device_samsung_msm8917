@@ -121,6 +121,7 @@ PRODUCT_PACKAGES += \
 # Display
 PRODUCT_PACKAGES += \
     AdvancedDisplay \
+    Msm8917Doze \
     copybit.msm8937 \
     hwcomposer.msm8937 \
     memtrack.msm8937 \

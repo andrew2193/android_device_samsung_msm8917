@@ -17,19 +17,14 @@
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 
 # Inherit some common CherishOS stuff.
-$(call inherit-product, vendor/cherish/config/common_full_phone.mk)
+$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 
 # Inherit MIUI Camera
 $(call inherit-product, vendor/MiuiCamera/config.mk)
 
-# Maintainer
-PRODUCT_PROPERTY_OVERRIDES += \
-    ro.cherish.maintainer=andrew2193(Ryzen 3900x)
-
 # Additional Props
 TARGET_FACE_UNLOCK_SUPPORTED := false
 TARGET_BOOT_ANIMATION_RES := 720
-CHERISH_NONGAPPS := true
 
 # Inherit from j2y18lte device
 $(call inherit-product, $(LOCAL_PATH)/device.mk)
@@ -40,7 +35,7 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/gsi_keys.mk)
 PRODUCT_BRAND := samsung
 PRODUCT_DEVICE := j2y18lte
 PRODUCT_MANUFACTURER := samsung
-PRODUCT_NAME := cherish_j2y18lte
+PRODUCT_NAME := lineage_j2y18lte
 PRODUCT_MODEL := Galaxy J2 Pro 2018
 
 PRODUCT_GMS_CLIENTID_BASE := android-samsung
